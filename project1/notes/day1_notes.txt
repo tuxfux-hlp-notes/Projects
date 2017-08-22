@@ -1,0 +1,29 @@
+# refereces
+https://docs.djangoproject.com/en/1.11/intro/install/
+https://docs.djangoproject.com/en/1.11/intro/tutorial01/
+https://docs.djangoproject.com/en/1.11/intro/tutorial01/#url-argument-regex
+https://docs.djangoproject.com/en/1.11/intro/tutorial02/
+
+### version of python and django for current project ###
+## note: creation of virtualenv for python3
+
+
+khyaathi@khyaathi-Technologies:~/Documents/tuxfux-hlp-notes/projects/project1$ python3 --version
+Python 3.5.2+
+khyaathi@khyaathi-Technologies:~/Documents/tuxfux-hlp-notes/projects/project1$ virtualenv -p python3 myenv
+Running virtualenv with interpreter /usr/bin/python3
+Using base prefix '/usr'
+New python executable in /home/khyaathi/Documents/tuxfux-hlp-notes/projects/project1/myenv/bin/python3
+Also creating executable in /home/khyaathi/Documents/tuxfux-hlp-notes/projects/project1/myenv/bin/python
+Installing setuptools, pip, wheel...done.
+khyaathi@khyaathi-Technologies:~/Documents/tuxfux-hlp-notes/projects/project1$ 
+
+khyaathi@khyaathi-Technologies:~/Documents/tuxfux-hlp-notes/projects/project1$ source myenv/bin/activate
+(myenv) khyaathi@khyaathi-Technologies:~/Documents/tuxfux-hlp-notes/projects/project1$ pip3 freeze
+(myenv) khyaathi@khyaathi-Technologies:~/Documents/tuxfux-hlp-notes/projects/project1$ 
+(myenv) khyaathi@khyaathi-Technologies:~/Documents/tuxfux-hlp-notes/projects/project1$ 
+
+(myenv) khyaathi@khyaathi-Technologies:~/Documents/tuxfux-hlp-notes/projects/project1$ pip3 freeze
+Django==1.11.4
+pytz==2017.2
+(myenv) khyaathi@khyaathi-Technologies:~/Documents/tuxfux-hlp-notes/projects/project1$ 
