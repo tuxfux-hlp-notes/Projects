@@ -1,0 +1,16 @@
+Project Name: My contact Book
+
+Overview:
+
+The below task consists of two parts. One part is to accept the values.
+
+In part one ,the user wants to create an address book . You need to take Name,Phone number,Address as the inputs from console. Later store the information in the .txt file.
+
+The second part, you need to give the Name as the input. You need to display the Name and Address on the console.
+
+What you will be Using:
+Input/Output, Print, Python File Commands, If/Elif/Else,Functions,re
+
+My Thoughts on Project:
+This is a great intermediate Python project once you are really going with Python. 
+This will teach you how to access files, edit them, save them, delete them, and more.

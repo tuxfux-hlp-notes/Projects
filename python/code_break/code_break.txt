@@ -1,0 +1,22 @@
+Project name : codebreak
+
+Overview:
+Find out the meaning of the sentence below.
+
+Sentence to crypt: QM YR JYQR WMS YPC Y NWRFML ESW.
+Expected answer:   So at last you are a python guy.
+
+Logic is as below:
+
+ A -> C
+ B -> D
+ C -> E
+ D -> F
+
+Alphabet A implies C, Alphabet B implies D, Alphabet C implies E,Alphabet D implies F.
+
+What you will be Using:
+string modules, Print, continue, Breaks, list
+
+My Thoughts on Project:
+A very fun beginning project, have fun with this... Come up with some great logics! Also, this project really gets you to experiment with strings, functions of strings and also the list operator
