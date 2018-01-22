@@ -1,0 +1,51 @@
+Project Requirement
+--------------------
+
+The Project team has to write a program in python that will automatically generate a time table for a particular year in a particular semester. By "time table" is implied the allocation of different periods during the working week to different subjects for different sections and in different classrooms ( or labs)
+
+Periods:      9 periods in a day,55 mins per period, only 5 working days (MON-FRI) , i.e total 45 periods per week
+Sections:     8 sections,A1-A4,B1-B4
+Subjects:     7 subjects,tabulated in Table 1, each subject comes with an acronym ( code, e.g MA 101 ) , the number of periods per week, and the distribution of
+              these periods into class types (i.e lectures,tutorials and labs)
+Classrooms:   2 Lecture classrooms LY-1 and LT-4, 4 tutorial rooms TR-1 to TR-4 , one Laboratory Hall for each subject that needs a lab.
+
+The program should start with Monday 1st period,allocate it for one ( or more if a Lecture) section, for a particular subject and to be held in a particular room.Next it should do the same for Monday 2nd period, and so on till Friday last period is completed. While doing so it has to satisfy each of the 13 constraints listed below.
+
+While satisfying constraints in inviolable ( otherwise the program is considered in-feasible and useless) , between different feasible programs that one is considering the better which better satisfies the following objectives.
+
+Distance between free periods:
+------------------------------
+
+There are total ( 31 + 5) periods including the lunch period. This implies there are 9 = ( 45 - 36 ) free periods in a week, for each of the 8 sections. So potentially all except one half-day ( each half-day is the session before or after lunch) can have one free period. The goodness of the program is how well it distributes the free periods across half days. Except for wednesday which will enforce no free periods in morning and 2 continuous free periods in the afternoon, common to all sections.
+ 
+Generality of program: 
+-----------------------
+
+The program must not be captive to the specifies contained in the Table 1. Thus, it should be able to "read in" the number of subjects, the acronyms for each, the distribution across class types, and then make the table accordingly.However , it can assume that the number of sub-sections remains 8, classified into 2 sections A & B, the number of lecture halls remains 2, tutorial rooms remain 4, labs available for subjects that need them, and courses , the periods remain 9 per day.
+
+Constraints:
+-------------
+
+1. Lunch hour is staggered ( no more than 5 sections to have lunch during the same period) . Assign respective lunch hours in the two periods 12:35 - 2:30 pm.
+2. Lecture rooms LT-2 and LT-4 to be used for lectures. These rooms may also be used for tutorials, but tutorial rooms cannot be used for lectures.
+3. Lectures are conducted separately for the A and B sections. The complete A-section and B-section attends a lecture together.
+4. Tutorials are conducted individually for each section ( A1,A2,...B4).
+5. Laboratory sessions are conducted individually for each section (A1,A2 .. B4)
+6. All Laboratory sessions to be held in continuation , for 2 periods without break, and only one lab per week ( hence shown as 2 periods in Table 1)
+7. Lecture and Tutorial classes must not be held in continuation.
+8. EE101 lectures are to be scheduled on Tuesdays and Fridays in the periods 10:35 - 11:30 am and 12:35 - 1:30 pm ( constraints 8-11 are specific and reduce    generality , just keep in mind in any timetable there will be some or the other arbitary constraints imposed due to external factors ; thus this kind of arbitrariness needs to be handled though their specifics will alter)
+9. One EE101 tutorial to be scheduled on Tuesday during the period 2:35 - 3:30 pm ( any one section )
+10. HS102 ( French ) classes to be scheduled on Tuesday,Wednesday and Thursday only between 9:30 am and 4:30 pm with at least a 1-hour lunch break for the French faculty.
+11. During any given period , only two sections may be engaged , one by each of the two french faculty members.
+12. During the period when a lecuture for any subject is being conducted ( say, for A - section ) , no tutorial should be scheduled for the other sections ( say , B - section)/
+13. The first two periods are to be fully occupied for all working days.
+
+
+Table I : https://drive.google.com/file/d/0Bxq4UvUJTuQPXzRCMDJPc2h1SUU/view?usp=sharing
+
+Activity Sequence:
+-------------------
+
+1. First work out the step-by-step algorithm ( could also be a flowchart) for solving the above problem. Note that the algorithm should speak of "constraints" generally rather than discuss individual constraints.
+2. After writing the algorithm , start writing the program.
+3. Validate the program for Correctness.
