@@ -1,0 +1,25 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include 'head_style.html' %}
+</head><!--/head-->
+
+<body class="homepage">
+
+    <header id="header">
+            {% include 'top_bar.html' %}
+            {% include 'navbar.html' %}
+    </header><!--/header-->
+
+{% block content %} {% endblock %}
+{% block slider %} {% endblock %}
+{% block features %} {% endblock %}
+{% block recentworks %} {% endblock %}
+{% block services %} {% endblock %}
+{% block middle %} {% endblock %}    
+{% block partner %} {% endblock %}
+{% include 'common_bottom.html' %}
+{% include 'common_footer.html' %}
+</body>
+</html>
